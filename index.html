@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calcular salario</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de salario</h1>
+        <form id="calculoForm">
+            <label for="hora">Horas trabajadas:</label>
+            <input type="number" id="hora" name="hora" min="0" aria-label="Horas trabajadas" required>
+            <label for="precio">Precio por Hora:</label>
+            <input type="number" id="precio" name="precio" min="0" aria-label="Precio por hora" required>
+            <button type="button" class="calculateButton" onclick="calcular()">Calcular</button>
+        </form>
+        <div id="resultado"></div>
+        <div class="button-container">
+            <button id="bonusButton" onclick="agregarBonus()">Bonus</button>
+            <button id="frasesButton" onclick="mostrarFrase()">Frases</button>
+            <button id="resetButton" onclick="restablecer()">Restablecer</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
